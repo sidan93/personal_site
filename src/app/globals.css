@@ -4,16 +4,16 @@
 
 @layer base {
   :root {
-    --bg: #FAFAFA;
+    --bg: #F6F6F4;
     --card: #FFFFFF;
-    --card-2: #F4F4F5;
-    --border: #E4E4E7;
-    --text: #09090B;
-    --text-muted: #71717A;
-    --accent: #059669;
-    --accent-dim: rgba(5, 150, 105, 0.1);
-    --tag-bg: #ECFDF5;
-    --tag-text: #065F46;
+    --card-2: #EFEFED;
+    --border: #DEDEDC;
+    --text: #1A1A18;
+    --text-muted: #737370;
+    --accent: #047857;
+    --accent-dim: rgba(4, 120, 87, 0.1);
+    --tag-bg: #D1FAE5;
+    --tag-text: #064E3B;
   }
 
   .dark {
