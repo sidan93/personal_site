@@ -10,7 +10,7 @@ export default function ResumeSection() {
         </p>
       </div>
       <a
-        href="/resume.pdf"
+        href="/personal_site/resume.pdf"
         download
         className="px-5 py-2.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-xl text-sm font-medium hover:opacity-80 transition-opacity"
       >
