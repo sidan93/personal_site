@@ -5,8 +5,8 @@ export default function AboutCard() {
         About Me
       </h2>
       <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-        Placeholder bio text. Describe yourself, what you do, what you're interested in.
-        Keep it short — 2-3 sentences is enough.
+        Placeholder bio text. Describe yourself, what you do, what you&apos;re interested in.
+        Keep it short &mdash; 2-3 sentences is enough.
       </p>
       <ul className="space-y-2">
         {[
