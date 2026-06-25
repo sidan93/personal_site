@@ -1,3 +1,5 @@
+'use client'
+
 import FlipCard from './FlipCard'
 import { projects } from '@/data/projects'
 
