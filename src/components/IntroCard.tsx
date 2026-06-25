@@ -2,7 +2,7 @@ import ThemeToggle from './ThemeToggle'
 
 export default function IntroCard() {
   return (
-    <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+    <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 card-elevated">
       <div className="flex justify-between items-start mb-5">
         <div className="flex items-center gap-4">
           {/* Avatar with gradient ring */}

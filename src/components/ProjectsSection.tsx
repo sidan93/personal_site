@@ -5,7 +5,7 @@ import { projects } from '@/data/projects'
 
 export default function ProjectsSection() {
   return (
-    <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+    <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 card-elevated">
       <h2 className="font-code text-xs font-medium uppercase tracking-widest mb-5" style={{ color: 'var(--text-muted)' }}>
         Projects
       </h2>
@@ -14,7 +14,7 @@ export default function ProjectsSection() {
           <div key={project.title} className="h-48">
             <FlipCard
               front={
-                <div className="h-full bg-[var(--card-2)] border border-[var(--border)] rounded-xl p-4 flex flex-col justify-between cursor-pointer hover:border-[var(--accent)] transition-colors">
+                <div className="h-full bg-[var(--card-2)] border border-[var(--border)] rounded-xl p-4 flex flex-col justify-between cursor-pointer hover:border-[var(--accent)] card-inner">
                   <div>
                     <h3 className="font-heading font-semibold mb-1.5" style={{ color: 'var(--text)' }}>
                       {project.title}

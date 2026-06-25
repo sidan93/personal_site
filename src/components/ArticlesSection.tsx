@@ -2,7 +2,7 @@ import { articles } from '@/data/articles'
 
 export default function ArticlesSection() {
   return (
-    <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+    <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 card-elevated">
       <h2 className="font-code text-xs font-medium uppercase tracking-widest mb-5" style={{ color: 'var(--text-muted)' }}>
         Articles
       </h2>

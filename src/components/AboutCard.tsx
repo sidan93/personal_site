@@ -1,6 +1,6 @@
 export default function AboutCard() {
   return (
-    <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+    <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 card-elevated">
       <h2 className="font-code text-xs font-medium uppercase tracking-widest mb-4" style={{ color: 'var(--text-muted)' }}>
         About Me
       </h2>
