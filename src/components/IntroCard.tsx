@@ -7,7 +7,7 @@ export default function IntroCard() {
         <div className="flex items-center gap-4">
           {/* Avatar with gradient ring */}
           <div className="relative w-16 h-16 flex-shrink-0">
-            <div className="absolute inset-0 rounded-full" style={{ background: 'conic-gradient(from 180deg, var(--accent), #c084fc, var(--accent))' }} />
+            <div className="absolute inset-0 rounded-full" style={{ background: 'conic-gradient(from 180deg, var(--accent), #6EE7B7, var(--accent))' }} />
             <div className="absolute inset-[2px] rounded-full bg-[var(--card)] flex items-center justify-center">
               <span className="font-heading text-xl font-bold" style={{ color: 'var(--accent)' }}>Y</span>
             </div>
