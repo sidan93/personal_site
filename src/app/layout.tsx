@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Onest, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin', 'cyrillic'] })
+const inter = Inter({ subsets: ['latin', 'cyrillic'], variable: '--font-inter' })
+const onest = Onest({ subsets: ['latin', 'cyrillic'], variable: '--font-onest', weight: ['400', '500', '600', '700'] })
+const jetbrains = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jetbrains', weight: ['400', '500'] })
 
 export const metadata: Metadata = {
   title: 'Your Name — Developer',
@@ -57,7 +59,7 @@ export default function RootLayout({
           </div>
         </noscript>
       </head>
-      <body className={`${inter.className} bg-[#f5f5f5] dark:bg-[#1a1a1a] min-h-screen transition-colors duration-300`}>
+      <body className={`${inter.variable} ${onest.variable} ${jetbrains.variable} font-[var(--font-inter)] bg-[var(--bg)] text-[var(--text)] min-h-screen transition-colors duration-300`}>
         {children}
       </body>
     </html>

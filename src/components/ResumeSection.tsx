@@ -1,18 +1,19 @@
 export default function ResumeSection() {
   return (
-    <div className="bg-white dark:bg-[#242424] rounded-2xl p-6 shadow-sm flex items-center justify-between">
+    <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 flex items-center justify-between">
       <div>
-        <h2 className="text-sm font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-1">
+        <h2 className="font-code text-xs font-medium uppercase tracking-widest mb-1" style={{ color: 'var(--text-muted)' }}>
           Resume
         </h2>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
+        <p className="font-heading text-sm" style={{ color: 'var(--text-muted)' }}>
           Updated 2025
         </p>
       </div>
       <a
         href="/personal_site/resume.pdf"
         download
-        className="px-5 py-2.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-xl text-sm font-medium hover:opacity-80 transition-opacity"
+        className="px-5 py-2.5 rounded-xl text-sm font-medium text-white hover:opacity-85 transition-opacity font-heading"
+        style={{ background: 'var(--accent)' }}
       >
         Download PDF
       </a>

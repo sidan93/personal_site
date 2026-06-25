@@ -2,20 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --bg: #F4F3FA;
+    --card: #FFFFFF;
+    --card-2: #F0EEF9;
+    --border: #E2DFF0;
+    --text: #16141F;
+    --text-muted: #6E6A82;
+    --accent: #7C5BF5;
+    --accent-dim: rgba(124, 91, 245, 0.12);
+    --tag-bg: #EEF0FF;
+    --tag-text: #5B4DB5;
+  }
+
+  .dark {
+    --bg: #0D0C14;
+    --card: #181622;
+    --card-2: #1E1B2C;
+    --border: #2A2740;
+    --text: #ECEAF4;
+    --text-muted: #7B7891;
+    --accent: #9B7EFF;
+    --accent-dim: rgba(155, 126, 255, 0.12);
+    --tag-bg: rgba(155, 126, 255, 0.12);
+    --tag-text: #B9A4FF;
+  }
+}
+
 @layer utilities {
-  .perspective-1000 {
-    perspective: 1000px;
-  }
+  .font-heading { font-family: var(--font-onest), sans-serif; }
+  .font-code { font-family: var(--font-jetbrains), monospace; }
 
-  .transform-style-3d {
-    transform-style: preserve-3d;
-  }
-
-  .backface-hidden {
-    backface-visibility: hidden;
-  }
-
-  .rotate-y-180 {
-    transform: rotateY(180deg);
-  }
+  .perspective-1000 { perspective: 1000px; }
+  .transform-style-3d { transform-style: preserve-3d; }
+  .backface-hidden { backface-visibility: hidden; }
+  .rotate-y-180 { transform: rotateY(180deg); }
 }

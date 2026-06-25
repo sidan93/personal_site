@@ -2,11 +2,11 @@ import { articles } from '@/data/articles'
 
 export default function ArticlesSection() {
   return (
-    <div className="bg-white dark:bg-[#242424] rounded-2xl p-6 shadow-sm">
-      <h2 className="text-sm font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-4">
+    <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+      <h2 className="font-code text-xs font-medium uppercase tracking-widest mb-5" style={{ color: 'var(--text-muted)' }}>
         Articles
       </h2>
-      <ul className="space-y-3">
+      <ul className="space-y-4">
         {articles.map((article) => (
           <li key={article.url}>
             <a
@@ -16,18 +16,18 @@ export default function ArticlesSection() {
               className="flex items-center justify-between group"
             >
               <div>
-                <span className="text-sm font-medium text-gray-800 dark:text-gray-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                <span className="font-heading text-sm font-medium transition-colors" style={{ color: 'var(--text)' }}
+                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent)')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'var(--text)')}>
                   {article.title}
                 </span>
-                <div className="flex items-center gap-2 mt-0.5">
-                  <span className="text-xs text-gray-400">{article.source}</span>
-                  <span className="text-xs text-gray-300 dark:text-gray-600">·</span>
-                  <span className="text-xs text-gray-400">{article.date}</span>
+                <div className="flex items-center gap-2 mt-1">
+                  <span className="font-code text-xs" style={{ color: 'var(--text-muted)' }}>{article.source}</span>
+                  <span style={{ color: 'var(--border)' }}>·</span>
+                  <span className="font-code text-xs" style={{ color: 'var(--text-muted)' }}>{article.date}</span>
                 </div>
               </div>
-              <span className="text-gray-300 dark:text-gray-600 group-hover:text-blue-400 transition-colors">
-                →
-              </span>
+              <span className="ml-4 transition-colors" style={{ color: 'var(--text-muted)' }}>→</span>
             </a>
           </li>
         ))}

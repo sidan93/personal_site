@@ -2,57 +2,48 @@ import ThemeToggle from './ThemeToggle'
 
 export default function IntroCard() {
   return (
-    <div className="bg-white dark:bg-[#242424] rounded-2xl p-6 shadow-sm">
-      <div className="flex justify-between items-start mb-4">
+    <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+      <div className="flex justify-between items-start mb-5">
         <div className="flex items-center gap-4">
-          {/* Avatar placeholder */}
-          <div className="w-16 h-16 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-2xl">
-            👤
+          {/* Avatar with gradient ring */}
+          <div className="relative w-16 h-16 flex-shrink-0">
+            <div className="absolute inset-0 rounded-full" style={{ background: 'conic-gradient(from 180deg, var(--accent), #c084fc, var(--accent))' }} />
+            <div className="absolute inset-[2px] rounded-full bg-[var(--card)] flex items-center justify-center">
+              <span className="font-heading text-xl font-bold" style={{ color: 'var(--accent)' }}>Y</span>
+            </div>
           </div>
           <div>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-0.5">HI, WELCOME!</p>
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Your Name</h1>
+            <p className="font-code text-xs uppercase tracking-widest mb-0.5" style={{ color: 'var(--text-muted)' }}>Hi, welcome!</p>
+            <h1 className="font-heading text-2xl font-bold" style={{ color: 'var(--text)' }}>Your Name</h1>
           </div>
         </div>
         <ThemeToggle />
       </div>
 
       {/* Role tags */}
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex flex-wrap gap-2 mb-5">
         {['Backend Developer', 'Python', 'TypeScript'].map((tag) => (
-          <span
-            key={tag}
-            className="px-3 py-1 rounded-full text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300"
-          >
+          <span key={tag} className="font-code px-2.5 py-1 rounded-md text-xs border border-[var(--border)] bg-[var(--tag-bg)]" style={{ color: 'var(--tag-text)' }}>
             {tag}
           </span>
         ))}
       </div>
 
       {/* Social links */}
-      <div className="flex gap-3">
-        <a
-          href="https://github.com/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-4 py-2 rounded-lg text-sm font-medium bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:opacity-80 transition-opacity"
-        >
+      <div className="flex gap-2 flex-wrap">
+        <a href="https://github.com/sidan93" target="_blank" rel="noopener noreferrer"
+          className="px-4 py-2 rounded-lg text-sm font-medium text-white hover:opacity-85 transition-opacity"
+          style={{ background: 'var(--accent)' }}>
           GitHub
         </a>
-        <a
-          href="https://t.me/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-4 py-2 rounded-lg text-sm font-medium border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
-        >
+        <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer"
+          className="px-4 py-2 rounded-lg text-sm font-medium border border-[var(--border)] hover:border-[var(--accent)] transition-colors"
+          style={{ color: 'var(--text-muted)' }}>
           Telegram
         </a>
-        <a
-          href="https://linkedin.com/in/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-4 py-2 rounded-lg text-sm font-medium border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
-        >
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"
+          className="px-4 py-2 rounded-lg text-sm font-medium border border-[var(--border)] hover:border-[var(--accent)] transition-colors"
+          style={{ color: 'var(--text-muted)' }}>
           LinkedIn
         </a>
       </div>

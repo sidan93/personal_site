@@ -5,8 +5,8 @@ import { projects } from '@/data/projects'
 
 export default function ProjectsSection() {
   return (
-    <div className="bg-white dark:bg-[#242424] rounded-2xl p-6 shadow-sm">
-      <h2 className="text-sm font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-4">
+    <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+      <h2 className="font-code text-xs font-medium uppercase tracking-widest mb-5" style={{ color: 'var(--text-muted)' }}>
         Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -14,21 +14,18 @@ export default function ProjectsSection() {
           <div key={project.title} className="h-48">
             <FlipCard
               front={
-                <div className="h-full bg-gray-50 dark:bg-[#2e2e2e] rounded-xl p-4 flex flex-col justify-between">
+                <div className="h-full bg-[var(--card-2)] border border-[var(--border)] rounded-xl p-4 flex flex-col justify-between cursor-pointer hover:border-[var(--accent)] transition-colors">
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">
+                    <h3 className="font-heading font-semibold mb-1.5" style={{ color: 'var(--text)' }}>
                       {project.title}
                     </h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                    <p className="text-sm leading-relaxed" style={{ color: 'var(--text-muted)' }}>
                       {project.description}
                     </p>
                   </div>
-                  <div className="flex flex-wrap gap-1">
+                  <div className="flex flex-wrap gap-1.5">
                     {project.stack.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-2 py-0.5 rounded text-xs bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300"
-                      >
+                      <span key={tech} className="font-code px-2 py-0.5 rounded text-xs bg-[var(--tag-bg)]" style={{ color: 'var(--tag-text)' }}>
                         {tech}
                       </span>
                     ))}
@@ -36,8 +33,8 @@ export default function ProjectsSection() {
                 </div>
               }
               back={
-                <div className="h-full bg-gray-900 dark:bg-black rounded-xl p-4 flex flex-col justify-between">
-                  <p className="text-sm text-gray-300 leading-relaxed">
+                <div className="h-full rounded-xl p-4 flex flex-col justify-between" style={{ background: 'var(--accent)' }}>
+                  <p className="text-sm text-white/90 leading-relaxed">
                     {project.details}
                   </p>
                   <a
@@ -45,7 +42,8 @@ export default function ProjectsSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => e.stopPropagation()}
-                    className="inline-block px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors text-center"
+                    className="inline-block px-4 py-2 bg-white rounded-lg text-sm font-medium hover:bg-white/90 transition-colors text-center font-heading"
+                    style={{ color: 'var(--accent)' }}
                   >
                     View on GitHub →
                   </a>
@@ -55,8 +53,8 @@ export default function ProjectsSection() {
           </div>
         ))}
       </div>
-      <p className="text-xs text-gray-400 dark:text-gray-600 mt-3 text-center">
-        Click a card to flip
+      <p className="font-code text-xs mt-4 text-center" style={{ color: 'var(--text-muted)' }}>
+        click to flip
       </p>
     </div>
   )

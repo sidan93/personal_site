@@ -23,12 +23,12 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggle}
-      className="flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium
-        bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400
-        hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+      className="font-code flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs
+        border border-[var(--border)] text-[var(--text-muted)]
+        hover:border-[var(--accent)] hover:text-[var(--text)] transition-colors"
       aria-label="Toggle theme"
     >
-      <span>{dark ? '☀️' : '🌙'}</span>
+      <span style={{ color: 'var(--accent)' }}>{dark ? '◑' : '◐'}</span>
       <span>{dark ? 'LIGHT' : 'DARK'}</span>
     </button>
   )
