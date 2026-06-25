@@ -7,13 +7,13 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    title: 'Article Title One',
+    title: 'Заголовок статьи — сюда вставить реальный',
     source: 'Habr',
     url: 'https://habr.com/your-article',
     date: '2025-01',
   },
   {
-    title: 'Article Title Two',
+    title: 'Заголовок второй статьи',
     source: 'Medium',
     url: 'https://medium.com/your-article',
     date: '2024-11',

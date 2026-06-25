@@ -13,8 +13,8 @@ export default function IntroCard() {
             </div>
           </div>
           <div>
-            <p className="font-code text-xs uppercase tracking-widest mb-0.5" style={{ color: 'var(--text-muted)' }}>Hi, welcome!</p>
-            <h1 className="font-heading text-2xl font-bold" style={{ color: 'var(--text)' }}>Your Name</h1>
+            <p className="font-code text-xs uppercase tracking-widest mb-0.5" style={{ color: 'var(--text-muted)' }}>Привет, заходи!</p>
+            <h1 className="font-heading text-2xl font-bold" style={{ color: 'var(--text)' }}>Андрей Сидоров</h1>
           </div>
         </div>
         <ThemeToggle />
@@ -36,12 +36,12 @@ export default function IntroCard() {
           style={{ background: 'var(--accent)' }}>
           GitHub
         </a>
-        <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer"
+        <a href="https://t.me/absidorov" target="_blank" rel="noopener noreferrer"
           className="px-4 py-2 rounded-lg text-sm font-medium border border-[var(--border)] hover:border-[var(--accent)] transition-colors"
           style={{ color: 'var(--text-muted)' }}>
           Telegram
         </a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"
+        <a href="https://linkedin.com/in/absidorov" target="_blank" rel="noopener noreferrer"
           className="px-4 py-2 rounded-lg text-sm font-medium border border-[var(--border)] hover:border-[var(--accent)] transition-colors"
           style={{ color: 'var(--text-muted)' }}>
           LinkedIn

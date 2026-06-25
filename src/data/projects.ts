@@ -8,17 +8,17 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Project One',
-    description: 'Short description of the project.',
+    title: 'Проект один',
+    description: 'Короткое описание проекта — что делает и зачем.',
     stack: ['TypeScript', 'React', 'Node.js'],
-    url: 'https://github.com/yourusername/project-one',
-    details: 'Longer description shown on card flip. What problem it solves, what you learned.',
+    url: 'https://github.com/sidan93/project-one',
+    details: 'Подробное описание на обороте карточки. Какую задачу решает, что было интересно в реализации.',
   },
   {
-    title: 'Project Two',
-    description: 'Short description of the project.',
+    title: 'Проект два',
+    description: 'Короткое описание проекта — что делает и зачем.',
     stack: ['Python', 'FastAPI', 'PostgreSQL'],
-    url: 'https://github.com/yourusername/project-two',
-    details: 'Longer description shown on card flip.',
+    url: 'https://github.com/sidan93/project-two',
+    details: 'Подробное описание на обороте карточки.',
   },
 ]

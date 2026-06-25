@@ -7,7 +7,7 @@ export default function ProjectsSection() {
   return (
     <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 card-elevated">
       <h2 className="font-code text-xs font-medium uppercase tracking-widest mb-5" style={{ color: 'var(--text-muted)' }}>
-        Projects
+        Проекты
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {projects.map((project) => (
@@ -45,7 +45,7 @@ export default function ProjectsSection() {
                     className="inline-block px-4 py-2 bg-white rounded-lg text-sm font-medium hover:bg-white/90 transition-colors text-center font-heading"
                     style={{ color: 'var(--accent)' }}
                   >
-                    View on GitHub →
+                    Открыть на GitHub →
                   </a>
                 </div>
               }
@@ -54,7 +54,7 @@ export default function ProjectsSection() {
         ))}
       </div>
       <p className="font-code text-xs mt-4 text-center" style={{ color: 'var(--text-muted)' }}>
-        click to flip
+        нажми, чтобы перевернуть
       </p>
     </div>
   )
