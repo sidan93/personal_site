@@ -16,9 +16,7 @@ export default function ArticlesSection() {
               className="flex items-center justify-between group"
             >
               <div>
-                <span className="font-heading text-sm font-medium transition-colors" style={{ color: 'var(--text)' }}
-                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent)')}
-                  onMouseLeave={e => (e.currentTarget.style.color = 'var(--text)')}>
+                <span className="font-heading text-sm font-medium transition-colors text-[var(--text)] group-hover:text-[var(--accent)]">
                   {article.title}
                 </span>
                 <div className="flex items-center gap-2 mt-1">
