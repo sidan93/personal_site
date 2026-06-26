@@ -205,6 +205,228 @@
   }
 
   /* =========================================
+     LIQUID NOIR — ivory + sienna / void black + gold
+     ========================================= */
+  html[data-variant="liquid-noir"] {
+    --bg: #F2EFE8;
+    --bg-glow: rgba(180, 83, 9, 0.07);
+    --card: #FFFFFF;
+    --card-2: #EDE8E0;
+    --border: #DDD5C8;
+    --text: #1A1208;
+    --text-muted: #7A6A58;
+    --accent: #B45309;
+    --accent-dim: rgba(180, 83, 9, 0.10);
+    --tag-bg: #FEF3C7;
+    --tag-text: #92400E;
+    --shadow-card: 0 1px 2px rgba(26,18,8,0.05), 0 4px 16px rgba(26,18,8,0.09), inset 0 1px 0 #FFFFFF;
+    --shadow-card-hover: 0 2px 4px rgba(26,18,8,0.07), 0 10px 28px rgba(26,18,8,0.14), inset 0 1px 0 #FFFFFF;
+    --shadow-inner: 0 1px 2px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.07), inset 0 1px 0 rgba(255,255,255,0.8);
+    --shadow-inner-hover: 0 2px 4px rgba(0,0,0,0.06), 0 6px 16px rgba(0,0,0,0.10), inset 0 1px 0 rgba(255,255,255,0.8);
+  }
+  html.dark[data-variant="liquid-noir"] {
+    --bg: #050505;
+    --bg-glow: rgba(232, 196, 122, 0.07);
+    --card: #0C0A08;
+    --card-2: #141008;
+    --border: rgba(232, 196, 122, 0.12);
+    --text: #F5EDD8;
+    --text-muted: #7A6A50;
+    --accent: #E8C47A;
+    --accent-dim: rgba(232, 196, 122, 0.10);
+    --tag-bg: rgba(232, 196, 122, 0.08);
+    --tag-text: #D4A853;
+    --shadow-card: 0 1px 2px rgba(0,0,0,0.9), 0 4px 24px rgba(0,0,0,0.95), inset 0 1px 0 rgba(232,196,122,0.06);
+    --shadow-card-hover: 0 2px 4px rgba(0,0,0,0.9), 0 12px 36px rgba(0,0,0,0.98), inset 0 1px 0 rgba(232,196,122,0.10);
+    --shadow-inner: 0 1px 2px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.85), inset 0 1px 0 rgba(232,196,122,0.04);
+    --shadow-inner-hover: 0 2px 4px rgba(0,0,0,0.8), 0 6px 16px rgba(0,0,0,0.9), inset 0 1px 0 rgba(232,196,122,0.07);
+  }
+  html.dark[data-variant="liquid-noir"] body {
+    background-image: radial-gradient(ellipse 55% 45% at 50% 35%, rgba(232,196,122,0.06) 0%, transparent 70%);
+  }
+  html.dark[data-variant="liquid-noir"].cards-glass .card-elevated {
+    background-color: rgba(8, 6, 4, 0.62) !important;
+    border-color: rgba(232, 196, 122, 0.15) !important;
+  }
+
+  /* =========================================
+     SPATIAL — clean white + blue / deep space + icy blue
+     ========================================= */
+  html[data-variant="spatial"] {
+    --bg: #F5F7FA;
+    --bg-glow: rgba(37, 99, 235, 0.07);
+    --card: #FFFFFF;
+    --card-2: #EBF0FA;
+    --border: #D0DCF0;
+    --text: #0A1628;
+    --text-muted: #4B6080;
+    --accent: #2563EB;
+    --accent-dim: rgba(37, 99, 235, 0.10);
+    --tag-bg: #DBEAFE;
+    --tag-text: #1E3A8A;
+    --shadow-card: 0 2px 4px rgba(10,22,40,0.06), 0 8px 24px rgba(37,99,235,0.08), inset 0 1px 0 #FFFFFF;
+    --shadow-card-hover: 0 4px 8px rgba(10,22,40,0.08), 0 20px 48px rgba(37,99,235,0.14), inset 0 1px 0 #FFFFFF;
+    --shadow-inner: 0 1px 2px rgba(0,0,0,0.04), 0 2px 8px rgba(37,99,235,0.06), inset 0 1px 0 rgba(255,255,255,0.9);
+    --shadow-inner-hover: 0 2px 4px rgba(0,0,0,0.06), 0 6px 16px rgba(37,99,235,0.10), inset 0 1px 0 rgba(255,255,255,0.9);
+  }
+  html.dark[data-variant="spatial"] {
+    --bg: #080C14;
+    --bg-glow: rgba(56, 189, 248, 0.09);
+    --card: #0F1828;
+    --card-2: #162236;
+    --border: #1E3050;
+    --text: #E8F4FE;
+    --text-muted: #6890B0;
+    --accent: #38BDF8;
+    --accent-dim: rgba(56, 189, 248, 0.12);
+    --tag-bg: rgba(56, 189, 248, 0.10);
+    --tag-text: #7DD3FC;
+    --shadow-card: 0 2px 8px rgba(0,0,0,0.8), 0 8px 32px rgba(56,189,248,0.06), inset 0 1px 0 rgba(56,189,248,0.06);
+    --shadow-card-hover: 0 4px 12px rgba(0,0,0,0.8), 0 20px 56px rgba(56,189,248,0.10), inset 0 1px 0 rgba(56,189,248,0.10);
+    --shadow-inner: 0 1px 2px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.6), inset 0 1px 0 rgba(56,189,248,0.05);
+    --shadow-inner-hover: 0 2px 4px rgba(0,0,0,0.6), 0 6px 16px rgba(56,189,248,0.08), inset 0 1px 0 rgba(56,189,248,0.08);
+  }
+  html.dark[data-variant="spatial"].cards-glass .card-elevated {
+    background-color: rgba(10, 18, 36, 0.55) !important;
+    border-color: rgba(56, 189, 248, 0.12) !important;
+  }
+  /* Spatial: deeper 3D hover lift */
+  html[data-variant="spatial"] .card-elevated:hover {
+    transform: perspective(900px) rotateX(-1deg) rotateY(1deg) translateY(-4px) !important;
+  }
+
+  /* =========================================
+     ANALOG — faded paper + sepia / dark wood + old gold
+     ========================================= */
+  html[data-variant="analog"] {
+    --bg: #F0E8D8;
+    --bg-glow: rgba(139, 69, 19, 0.06);
+    --card: #FAF5EB;
+    --card-2: #EEE4D0;
+    --border: #D4C4A8;
+    --text: #2C1A0A;
+    --text-muted: #8A6A50;
+    --accent: #8B4513;
+    --accent-dim: rgba(139, 69, 19, 0.10);
+    --tag-bg: #FDF0D8;
+    --tag-text: #6B3410;
+    --shadow-card: 0 1px 2px rgba(44,26,10,0.06), 0 4px 16px rgba(44,26,10,0.10), inset 0 1px 0 #FAF5EB;
+    --shadow-card-hover: 0 2px 4px rgba(44,26,10,0.08), 0 10px 28px rgba(44,26,10,0.15), inset 0 1px 0 #FAF5EB;
+    --shadow-inner: 0 1px 2px rgba(0,0,0,0.05), 0 2px 8px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.7);
+    --shadow-inner-hover: 0 2px 4px rgba(0,0,0,0.07), 0 6px 16px rgba(0,0,0,0.11), inset 0 1px 0 rgba(255,255,255,0.7);
+  }
+  html.dark[data-variant="analog"] {
+    --bg: #1A1208;
+    --bg-glow: rgba(212, 168, 83, 0.07);
+    --card: #231A0E;
+    --card-2: #2C2010;
+    --border: #3D2D18;
+    --text: #E8D8B8;
+    --text-muted: #8A7060;
+    --accent: #D4A853;
+    --accent-dim: rgba(212, 168, 83, 0.12);
+    --tag-bg: rgba(212, 168, 83, 0.10);
+    --tag-text: #E8C47A;
+    --shadow-card: 0 1px 2px rgba(0,0,0,0.6), 0 4px 20px rgba(0,0,0,0.8), inset 0 1px 0 rgba(212,168,83,0.05);
+    --shadow-card-hover: 0 2px 4px rgba(0,0,0,0.7), 0 10px 32px rgba(0,0,0,0.85), inset 0 1px 0 rgba(212,168,83,0.08);
+    --shadow-inner: 0 1px 2px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.6), inset 0 1px 0 rgba(212,168,83,0.04);
+    --shadow-inner-hover: 0 2px 4px rgba(0,0,0,0.6), 0 6px 16px rgba(0,0,0,0.7), inset 0 1px 0 rgba(212,168,83,0.07);
+  }
+  html.dark[data-variant="analog"].cards-glass .card-elevated {
+    background-color: rgba(22, 14, 8, 0.65) !important;
+    border-color: rgba(212, 168, 83, 0.12) !important;
+  }
+  /* Analog: stronger grain */
+  html[data-variant="analog"] body::before { opacity: 0.07; }
+
+  /* =========================================
+     SWISS — pure white + red / pure black + red
+     ========================================= */
+  html[data-variant="swiss"] {
+    --bg: #FFFFFF;
+    --bg-glow: rgba(229, 0, 0, 0.03);
+    --card: #FFFFFF;
+    --card-2: #F5F5F5;
+    --border: #E8E8E8;
+    --text: #000000;
+    --text-muted: #666666;
+    --accent: #E50000;
+    --accent-dim: rgba(229, 0, 0, 0.07);
+    --tag-bg: #FFE8E8;
+    --tag-text: #CC0000;
+    --shadow-card: 0 1px 2px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.10), inset 0 1px 0 #FFFFFF;
+    --shadow-card-hover: 0 2px 4px rgba(0,0,0,0.10), 0 10px 28px rgba(0,0,0,0.16), inset 0 1px 0 #FFFFFF;
+    --shadow-inner: 0 1px 2px rgba(0,0,0,0.05), 0 2px 8px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.9);
+    --shadow-inner-hover: 0 2px 4px rgba(0,0,0,0.08), 0 6px 16px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.9);
+  }
+  html.dark[data-variant="swiss"] {
+    --bg: #0F0F0F;
+    --bg-glow: rgba(255, 26, 26, 0.05);
+    --card: #1A1A1A;
+    --card-2: #222222;
+    --border: #2A2A2A;
+    --text: #FFFFFF;
+    --text-muted: #888888;
+    --accent: #FF1A1A;
+    --accent-dim: rgba(255, 26, 26, 0.10);
+    --tag-bg: rgba(255, 26, 26, 0.08);
+    --tag-text: #FF6666;
+    --shadow-card: 0 1px 2px rgba(0,0,0,0.5), 0 4px 20px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.04);
+    --shadow-card-hover: 0 2px 4px rgba(0,0,0,0.6), 0 10px 32px rgba(255,26,26,0.06), inset 0 1px 0 rgba(255,255,255,0.06);
+    --shadow-inner: 0 1px 2px rgba(0,0,0,0.4), 0 2px 8px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.03);
+    --shadow-inner-hover: 0 2px 4px rgba(0,0,0,0.5), 0 6px 16px rgba(255,26,26,0.05), inset 0 1px 0 rgba(255,255,255,0.05);
+  }
+  /* Swiss: no gradient, flat backgrounds */
+  html[data-variant="swiss"] body,
+  html.dark[data-variant="swiss"] body { background-image: none; }
+  html.dark[data-variant="swiss"].cards-glass .card-elevated {
+    background-color: rgba(12, 12, 12, 0.75) !important;
+    border-color: rgba(255, 26, 26, 0.10) !important;
+  }
+
+  /* =========================================
+     BENTO — soft white + indigo / deep charcoal + violet
+     ========================================= */
+  html[data-variant="bento"] {
+    --bg: #FAFAF8;
+    --bg-glow: rgba(99, 102, 241, 0.06);
+    --card: #FFFFFF;
+    --card-2: #F3F4FF;
+    --border: #E4E5F8;
+    --text: #111111;
+    --text-muted: #6B7280;
+    --accent: #6366F1;
+    --accent-dim: rgba(99, 102, 241, 0.10);
+    --tag-bg: #EEF2FF;
+    --tag-text: #3730A3;
+    --shadow-card: 0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(99,102,241,0.07), inset 0 1px 0 #FFFFFF;
+    --shadow-card-hover: 0 2px 4px rgba(0,0,0,0.06), 0 10px 28px rgba(99,102,241,0.12), inset 0 1px 0 #FFFFFF;
+    --shadow-inner: 0 1px 2px rgba(0,0,0,0.04), 0 2px 8px rgba(99,102,241,0.05), inset 0 1px 0 rgba(255,255,255,0.9);
+    --shadow-inner-hover: 0 2px 4px rgba(0,0,0,0.06), 0 6px 16px rgba(99,102,241,0.09), inset 0 1px 0 rgba(255,255,255,0.9);
+  }
+  html.dark[data-variant="bento"] {
+    --bg: #111113;
+    --bg-glow: rgba(129, 140, 248, 0.09);
+    --card: #1A1A1E;
+    --card-2: #222228;
+    --border: #2C2C35;
+    --text: #F0F0F8;
+    --text-muted: #8080A0;
+    --accent: #818CF8;
+    --accent-dim: rgba(129, 140, 248, 0.12);
+    --tag-bg: rgba(129, 140, 248, 0.10);
+    --tag-text: #A5B4FC;
+    --shadow-card: 0 1px 2px rgba(0,0,0,0.5), 0 4px 20px rgba(0,0,0,0.65), inset 0 1px 0 rgba(129,140,248,0.06);
+    --shadow-card-hover: 0 2px 4px rgba(0,0,0,0.6), 0 10px 32px rgba(129,140,248,0.08), inset 0 1px 0 rgba(129,140,248,0.09);
+    --shadow-inner: 0 1px 2px rgba(0,0,0,0.4), 0 2px 8px rgba(0,0,0,0.5), inset 0 1px 0 rgba(129,140,248,0.04);
+    --shadow-inner-hover: 0 2px 4px rgba(0,0,0,0.5), 0 6px 16px rgba(129,140,248,0.07), inset 0 1px 0 rgba(129,140,248,0.07);
+  }
+  html.dark[data-variant="bento"].cards-glass .card-elevated {
+    background-color: rgba(16, 16, 20, 0.58) !important;
+    border-color: rgba(129, 140, 248, 0.12) !important;
+  }
+
+  /* =========================================
      BASE LAYOUT
      ========================================= */
   html {
