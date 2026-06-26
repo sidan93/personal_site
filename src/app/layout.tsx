@@ -28,7 +28,7 @@ export default function RootLayout({
                 var stored = localStorage.getItem('theme');
                 var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
                 if (stored === 'dark' || (!stored && prefersDark)) el.classList.add('dark');
-                var valid = ['luxury','aurora','amber','terminal','mono'];
+                var valid = ['luxury','aurora','amber','terminal','mono','liquid-noir','spatial','analog','swiss','bento'];
                 var v = localStorage.getItem('designVariant');
                 el.setAttribute('data-variant', valid.indexOf(v) !== -1 ? v : 'luxury');
                 el.classList.add('cards-glass');
