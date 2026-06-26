@@ -61,6 +61,11 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${onest.variable} ${jetbrains.variable} font-[var(--font-inter)] bg-[var(--bg)] text-[var(--text)] min-h-screen transition-colors duration-300`}>
         {children}
+        <footer className="text-center text-sm text-gray-400 py-6 mt-8">
+          <a href="https://ai.absidorov.ru/Политика-конфиденциальности" className="hover:underline">
+            Политика конфиденциальности
+          </a>
+        </footer>
       </body>
     </html>
   )
