@@ -23,11 +23,14 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
+                var el = document.documentElement;
                 var stored = localStorage.getItem('theme');
                 var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                if (stored === 'dark' || (!stored && prefersDark)) {
-                  document.documentElement.classList.add('dark');
-                }
+                if (stored === 'dark' || (!stored && prefersDark)) el.classList.add('dark');
+                var valid = ['luxury','aurora','amber','terminal','mono'];
+                var v = localStorage.getItem('designVariant');
+                el.setAttribute('data-variant', valid.indexOf(v) !== -1 ? v : 'luxury');
+                el.classList.add('cards-glass');
               })();
             `,
           }}

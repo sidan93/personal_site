@@ -1,6 +1,6 @@
 export default function ResumeSection() {
   return (
-    <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 flex items-center justify-between card-elevated">
+    <div className="h-full bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 flex items-center justify-between card-elevated">
       <div>
         <h2 className="font-code text-xs font-medium uppercase tracking-widest mb-1" style={{ color: 'var(--text-muted)' }}>
           Резюме
