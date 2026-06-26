@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Onest, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
+import CookieBanner from '../components/CookieBanner'
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'], variable: '--font-inter' })
 const onest = Onest({ subsets: ['latin', 'cyrillic'], variable: '--font-onest', weight: ['400', '500', '600', '700'] })
@@ -27,7 +28,7 @@ export default function RootLayout({
                 var stored = localStorage.getItem('theme');
                 var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
                 if (stored === 'dark' || (!stored && prefersDark)) el.classList.add('dark');
-                var valid = ['luxury','aurora','amber','terminal','mono','liquid-noir','spatial','analog','swiss','bento'];
+                var valid = ['luxury','aurora','amber','terminal','mono'];
                 var v = localStorage.getItem('designVariant');
                 el.setAttribute('data-variant', valid.indexOf(v) !== -1 ? v : 'luxury');
                 el.classList.add('cards-glass');
@@ -35,37 +36,10 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* Yandex Metrica */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-              m[i].l=1*new Date();
-              for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-              k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-              (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-              var metricaId = 110162866;
-              if (metricaId) {
-                ym(metricaId, "init", {
-                  clickmap: true,
-                  trackLinks: true,
-                  accurateTrackBounce: true,
-                  webvisor: true,
-                  trackHash: true
-                });
-              }
-            `,
-          }}
-        />
-        <noscript>
-          <div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://mc.yandex.ru/watch/110162866" style={{ position: 'absolute', left: '-9999px' }} alt="" />
-          </div>
-        </noscript>
       </head>
       <body className={`${inter.variable} ${onest.variable} ${jetbrains.variable} font-[var(--font-inter)] bg-[var(--bg)] text-[var(--text)] min-h-screen transition-colors duration-300`}>
         {children}
+        <CookieBanner />
         <footer className="text-center text-sm text-gray-400 py-6 mt-8">
           <a href="https://ai.absidorov.ru/Политика-конфиденциальности" className="hover:underline">
             Политика конфиденциальности
