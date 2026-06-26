@@ -5,14 +5,15 @@ export default function AboutCard() {
         О себе
       </h2>
       <p className="leading-relaxed mb-4 text-sm" style={{ color: 'var(--text)' }}>
-        Бэкенд-разработчик. Пишу на Python и TypeScript, строю сервисы и инструменты,
-        которые решают реальные задачи.
+        Более 13 лет в IT, последние годы — в роли технического руководителя.
+        Строю команды, отвечаю за архитектуру, запускаю продукты.
+        Руководил разработкой SaaS-продукта, ставшего частью экосистемы VK.
       </p>
       <ul className="space-y-2.5">
         {[
-          'Бэкенд: Python, FastAPI, PostgreSQL',
-          'Фронтенд: TypeScript, React, Next.js',
-          'Люблю чистый код и хорошие инструменты',
+          'Команды до 35 человек: найм, менторство, инженерная культура',
+          'Стек: Python, PostgreSQL, TypeScript, React',
+          'CI/CD, мониторинг, снижение техдолга, стабильность',
         ].map((item) => (
           <li key={item} className="flex items-start gap-2.5 text-sm" style={{ color: 'var(--text-muted)' }}>
             <span className="font-code mt-0.5" style={{ color: 'var(--accent)' }}>▸</span>

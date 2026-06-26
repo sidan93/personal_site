@@ -22,7 +22,7 @@ export default function IntroCard() {
 
       {/* Role tags */}
       <div className="flex flex-wrap gap-2 mb-5">
-        {['Backend Developer', 'Python', 'TypeScript'].map((tag) => (
+        {['CTO', 'Team Lead'].map((tag) => (
           <span key={tag} className="font-code px-2.5 py-1 rounded-md text-xs border border-[var(--border)] bg-[var(--tag-bg)]" style={{ color: 'var(--tag-text)' }}>
             {tag}
           </span>

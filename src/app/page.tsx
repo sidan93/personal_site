@@ -3,6 +3,7 @@ import AboutCard from '@/components/AboutCard'
 import ProjectsSection from '@/components/ProjectsSection'
 import ArticlesSection from '@/components/ArticlesSection'
 import ResumeSection from '@/components/ResumeSection'
+import ExperienceSection from '@/components/ExperienceSection'
 import VariantSwitcher from '@/components/VariantSwitcher'
 
 export default function Home() {
@@ -20,9 +21,12 @@ export default function Home() {
         </div>
       </div>
       <div className="mb-5 card-animate" style={{ animationDelay: '160ms' }}>
+        <ExperienceSection />
+      </div>
+      <div className="mb-5 card-animate" style={{ animationDelay: '240ms' }}>
         <ProjectsSection />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 card-animate" style={{ animationDelay: '240ms' }}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 card-animate" style={{ animationDelay: '320ms' }}>
         <ArticlesSection />
         <ResumeSection />
       </div>

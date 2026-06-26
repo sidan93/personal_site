@@ -6,7 +6,7 @@ export default function ResumeSection() {
           Резюме
         </h2>
         <p className="font-heading text-sm" style={{ color: 'var(--text-muted)' }}>
-          Обновлено в 2025
+          Обновлено в 2026
         </p>
       </div>
       <a
