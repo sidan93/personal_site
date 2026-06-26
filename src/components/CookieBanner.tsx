@@ -37,22 +37,26 @@ export default function CookieBanner() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    const consent = localStorage.getItem('cookieConsent')
-    if (consent === 'accepted') {
-      initMetrica()
-    } else if (!consent) {
+    try {
+      const consent = localStorage.getItem('cookieConsent')
+      if (consent === 'accepted') {
+        initMetrica()
+      } else if (consent !== 'declined') {
+        setVisible(true)
+      }
+    } catch {
       setVisible(true)
     }
   }, [])
 
   function handleAccept() {
-    localStorage.setItem('cookieConsent', 'accepted')
+    try { localStorage.setItem('cookieConsent', 'accepted') } catch { /* storage unavailable */ }
     initMetrica()
     setVisible(false)
   }
 
   function handleDecline() {
-    localStorage.setItem('cookieConsent', 'declined')
+    try { localStorage.setItem('cookieConsent', 'declined') } catch { /* storage unavailable */ }
     setVisible(false)
   }
 
