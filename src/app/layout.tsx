@@ -46,7 +46,9 @@ export default function RootLayout({
                 ym(metricaId, "init", {
                   clickmap: true,
                   trackLinks: true,
-                  accurateTrackBounce: true
+                  accurateTrackBounce: true,
+                  webvisor: true,
+                  trackHash: true
                 });
               }
             `,
